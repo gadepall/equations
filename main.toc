@@ -1,0 +1,4 @@
+\vskip -8pt
+\contentsline {schapter}{Introduction}{iii}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}Linear Equations}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Two Variables}{1}{section.1.1}%
