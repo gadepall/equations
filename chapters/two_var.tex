@@ -10,3 +10,31 @@
 \end{align}
 \item
 \end{enumerate}
+This is Problem-1.1 from Exercise 3.2
+\begin{enumerate}
+\item 10 students of Class X took part in a mathematics quiz.If the number of girls is 4 more than the number of boys,find the number of boys and girls who took part in the quiz.
+	
+\solution \\
+Let number of boys be $y$ and number of girls be $x$.\\
+\begin{align}
+x+y=10\\
+y+4=x
+\end{align}
+
+The $1^{st}$ equation is $x-y$=4\\
+The $2^{nd}$ equation is $y+x$=10\\
+\begin{align}
+\myvec{1&-1\\1&1} \myvec{x\\y}=\myvec{4\\10}\\
+y=\mydet{ a_1 & b\\a_1 & a_2} =&
+\frac{\mydet{ 1 & 4\\1 & 10}}{\mydet{ 1 & -1\\1 & 1}}
+=\frac{10-4}{1-(-1)}
+=\frac{6}{2}
+=3 \\ \\
+x=\mydet{ b & a_2\\a_1 & a_2} =&
+\frac{\mydet{ 4 & -1\\10 & 1}}{\mydet{ 1 & -1\\1 & 1}}
+=\frac{4-(-10)}{1-(-1)}
+=\frac{14}{2}
+=7\\ \\
+\end{align}
+Therefore  y=3 and x=7
+\end{enumerate}
