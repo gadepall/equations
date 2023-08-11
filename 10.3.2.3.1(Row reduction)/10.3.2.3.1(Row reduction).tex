@@ -1,0 +1,41 @@
+\documentclass[10pt]{article}
+\usepackage{amsmath}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\let\vec\mathbf
+
+\title{Pair of Linear Equations in Two Variables}
+\author{sai charvi (patnanasaicharvi@sriprakashschools.com)}
+
+
+\begin{document}
+\maketitle
+\section*{Class 10$^{th}$ Maths - Chapter 3}
+This is Problem-1.1 from Exercise 3.2
+\begin{enumerate}
+\item 3x+2y=5 and 2x-3y=7
+
+\solution
+\begin{align}
+3x+2y=5\\
+2x-3y=7\\
+\end{align}
+
+it can be written as\\
+\begin{align}
+\myvec{3&2&5\\2&-3&7}\\
+R_1\xrightarrow\ 2R_1-3R_2\\
+\myvec{0&13&-11\\2&-3&7}\\
+R_1\xrightarrow\ \frac{R_1}{13}\\
+\myvec{0&1&\frac{-11}{13}\\2&-3&7}\\
+R_2\xrightarrow\ R_2+3R_1\\
+\myvec{0&1&\frac{-11}{13}\\2&0&\frac{58}{13}}\\
+R_2\xrightarrow\ \frac{R_2}{2}\\
+\myvec{0&1&\frac{-11}{13}\\1&0&\frac{29}{13}}\\
+\end{align}
+therefore y=-11/13 and x=29/8
+\end{enumerate}
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\let\vec\mathbf
+
+\title{Linear Equations In Two Variables}
+\author{K.Ruhaanth Karthikeya (koppuruhaanthkarthikeya@sriprakashschools.com)}
+
+\begin{document}
+\maketitle
+\section*{Class No 9th} { Maths - Chapter 3}
+This is Problem 1 from Exercise 3.1
+\begin{enumerate}
+\item Aftab tells his daughter, "Seven years ago,
+I was seven times as old as you were then. Also, three years from 
+now, I shall be three times as old as you will be." Represent this situation both algebraically and graphically.
+
+\solution \\ Let us take Aftab's age as $x$ and his daughter's age as $y$
+"Seven years ago I was seven times as old as you were.\\
+Therefore,
+\begin{align}
+    x-7 = 7{\brak{y-7}}
+\end{align}
+so,
+"Three years from now, I shall be three times as old as you will be."
+Therefore,\\ 
+\begin{align}
+    x+3&= 3{\brak{y+3}}\\
+x-7y &= -42. \\
+x-3y&=6
+\end{align}
+The equations can also be written as:\\
+\begin{align}
+\myvec{1&-3\\1&-7}\myvec{x\\y}=\myvec{6\\-42}\\
+\end{align}
+\begin{align}
+x =\frac{\mydet{ \vec{b} & \vec{a_2}}}{\mydet{ \vec{a_1} & \vec{a_2}}} = &
+\frac{\mydet{6&-3\\-42&-7}}{ \mydet{1&-7\\1&-3}} =&
+\frac{\brak{-6}\brak{-7} - \brak{-3}\brak{-42}}{\brak{1} \brak{-7}-
+\brak{1}\brak{-3}} =& 42
+\end{align}
+Hence, Aftab's age is 42
+\begin{align}
+y = \frac{\mydet{ \vec{a_1} & \vec{b}}}{\mydet{ \vec{a_1} & \vec{a_2}}}=&
+\frac{\mydet{1&6\\1&-42}}{ \mydet{1&-7\\1&3}}=&
+\frac{\brak{1} \brak{-42} - \brak{1}\brak{6}}{\brak{1}\brak{-7} - \brak{1}\brak{-3}} =& 12
+\end{align}
+ Hence, Aftab's daughter's age is 12
+
+\end{enumerate}
+
+\end{document}
+
