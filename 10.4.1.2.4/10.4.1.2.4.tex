@@ -1,0 +1,36 @@
+  \documentclass[12pt]{article}
+    \usepackage{amsmath}
+    \newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+    \newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+    \newcommand{\solution}{\noindent \textbf{Solution: }}
+    \let\vec\mathbf
+    \title{QUADRATIC EQUATIONS}
+    \author{Naman Jain(namanjain@sriprakashschools.com)}
+    
+    \begin{document}
+    \maketitle
+    \section*{10$^{th}$ Maths - Chapter 4}
+    This is Problem-2.4 from Exercise 4.1
+    \begin{enumerate}
+    \item A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken  3 hours more to cover the same distance. We need to find the speed of the train.\\
+\solution:\\
+Let speed of train be = $x$
+Time taken by train to cover 480 km = $\frac{480}{x}$
+Required quadratic equation is :
+\begin{align}
+(x-8)(\frac{480}{x}+3) &= 480\\
+480+3x-\frac{3840}{x}-24 &= 480\\
+3x^2-24x-3840&=0\\
+x^2-8x-1280&=0\\
+x&=\frac{-b\pm\sqrt{b^2-4ac}}{2a}\\
+x&=\frac{8\pm\sqrt{(-8)^2-(4)(1)(-1280)}}{(2)(1)}\\
+x&=\frac{8\pm\sqrt{64+5120}}{2}\\
+x&=\frac{8\pm 72}{2}\\
+x_1&=\frac{80}{2}\\
+x_2&=\frac{-64}{2}\\
+x_1&=40\\
+x_2&=-32\\
+\end{align}
+Since sped cannot be negative, speed = 40 km/h\\
+\end{enumerate}
+\end{document}

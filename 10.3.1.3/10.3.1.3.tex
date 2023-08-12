@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\let\vec\mathbf
+
+\title{Linear Equations In Two Variables}
+\author{M.V.Pranav Koushik (venkatapranavkoushik.malla@sriprakashschools.com)}
+
+\begin{document}
+\maketitle
+\section*{Class No$^{th}$ Maths - Chapter 3}
+This is Problem-3 from Exercise 3.1
+\begin{enumerate}
+\item The cost of 2kg of apples and 1kg of grapes on a day was found to be  Rs.160 . After a month, the cost of 4kg apples and 2kg of grapes is Rs.300. Represent the situation algebraically and geometrically. \\
+\solution \\ Let us take cost5 of apples $x$ and that of grapes as $y$
+\
+Therefore,
+\begin{align}
+    2x+y&=160\\
+    4x+2y&=300\\
+\end{align}
+The equations can also be written as:\\
+\begin{align}
+\myvec{2&1\\4&2}\myvec{x\\y}=\myvec{160\\300}\\
+\end{align}
+\begin{align}
+x =\frac{\mydet{ \vec{b} & \vec{a_2}}}{\mydet{ \vec{a_1} & \vec{a_2}}} = &
+\frac{\mydet{160&1\\300&2}}{ \mydet{2&1\\4&2}} =&
+\frac{320-300}{4-4}=&
+\frac{20}{0}
+\end{align}
+Hence, Aftab's age is 42
+\begin{align}
+y = \frac{\mydet{ \vec{a_1} & \vec{b}}}{\mydet{ \vec{a_1} & \vec{a_2}}}=&
+\frac{\mydet{2&160\\4&300}}{ \mydet{2&1\\4&2}}=&
+\frac{600-640}{4-4}=&
+\frac{-40}{0}
+\end{align}
+ Hence, no solution exists.
+
+\end{enumerate}
+
+\end{document}
+
